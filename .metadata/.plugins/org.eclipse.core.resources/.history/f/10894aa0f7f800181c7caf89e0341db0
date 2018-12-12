@@ -1,0 +1,5 @@
+package spring.anwesha.springdemo.dao;
+
+public interface OrganizationDao {
+
+}

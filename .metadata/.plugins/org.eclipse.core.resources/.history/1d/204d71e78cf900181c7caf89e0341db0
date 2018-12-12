@@ -1,0 +1,7 @@
+package spring.anwesha.springdemo.daoimpl;
+
+import spring.anwesha.springdemo.dao.OrganizationDao;
+
+public class OrganizationDaoImpl implements OrganizationDao {
+
+}

@@ -1,0 +1,11 @@
+package spring.anwesha.springdemo.domain;
+
+public class Organization {
+	
+	private int id;
+	private String companyName;
+	private int yearOfIncorporation;
+	private String postalCode;
+	private int employeeCount;
+
+}

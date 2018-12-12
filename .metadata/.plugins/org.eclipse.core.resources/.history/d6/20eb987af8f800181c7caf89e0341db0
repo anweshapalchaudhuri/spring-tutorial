@@ -1,0 +1,15 @@
+package spring.anwesha.springdemo.dao;
+
+import spring.anwesha.springdemo.domain.Organization;
+
+public interface OrganizationDao {
+
+	//set the data-source that will be required to create a connection to a database. 
+	public void setDatasource();
+	//create a record in the organization table 
+	public boolean create(Organization org);
+	
+	//
+	public Organization getOrganization(Integer id);
+	
+}

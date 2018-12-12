@@ -1,0 +1,18 @@
+package spring.anwesha.springdemo.daoimpl;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.jdbc.core.RowMapper;
+
+import spring.anwesha.springdemo.domain.Organization;
+
+public class OrganizationRowMapper implements RowMapper<Organization>{
+
+	public Organization mapRow(ResultSet rs, int rownum) throws SQLException {
+		Organization org = new Organization();
+		org.setId(rs.getInt("id"))
+		return null;
+	}
+
+}

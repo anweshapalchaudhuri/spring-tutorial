@@ -1,0 +1,9 @@
+package spring.anwesha.springdemo.dao;
+
+public interface OrganizationDao {
+
+	//set the data-source that will be required to create a connection to a database. 
+	public void setDatasource();
+	public boolean create(Organization org);
+	
+}

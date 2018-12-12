@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;spring-constructor-arg-demo/src/main/java/com/anwesha/springdemo/ConstructorArgsApp.java&apos; to &apos;BeanFactoryApp.java&apos;" description="Rename resource &apos;ConstructorArgsApp.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/anwesha/springdemo/ConstructorArgsApp.java" name="BeanFactoryApp.java" stamp="1543377323508" updateReferences="true"/>
+</session>

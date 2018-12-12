@@ -1,0 +1,47 @@
+package spring.anwesha.springdemo;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import spring.anwesha.springdemo.dao.OrganizationDao;
+import spring.anwesha.springdemo.domain.Organization;
+
+public class JdbcTemplateClassicApp2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext ctx= new ClassPathXmlApplicationContext("beans-cp.xml");
+		//create the bean
+		OrganizationDao dao = (OrganizationDao) ctx.getBean("orgDao");
+		
+		//create seed data
+		DaoUtils.createSeedData(dao);
+		
+		//List Organizations
+		List<Organization> orgs = dao.getAllOrganization();
+		DaoUtils.printOrganizations(orgs, DaoUtils.readOperation);
+		
+		//Create a new organization record
+		Organization org = new Organization("General Electric", 1978, "989898", 5776, "Imagination at work");
+		boolean isCreated = dao.create(org);
+		DaoUtils.printSuccessFailure(DaoUtils.createOperation, isCreated);
+		DaoUtils.printOrganizationCount(dao.getAllOrganization(), DaoUtils.createOperation);
+		
+		//get single organization
+		Organization org2 = dao.getOrganization(1);
+		DaoUtils.printOrganization(org2, "getOrganization");
+		
+		Organization org3 = dao.getOrganization(2);
+		org3.setSlogan("We build **** awesome ** driving machines!");
+		
+		//cleanup
+		dao.cleanUp();
+		DaoUtils.printOrganizationCount(dao.getAllOrganization(), DaoUtils.cleanupOperation);
+		
+		//close the application context
+		((ClassPathXmlApplicationContext)ctx).close();
+	}
+
+}

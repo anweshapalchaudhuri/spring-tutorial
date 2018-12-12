@@ -1,0 +1,7 @@
+package spring.anwesha.springdemo.dao;
+
+public interface OrganizationDao {
+
+	public void setDatasource();
+	
+}

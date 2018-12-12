@@ -1,0 +1,4 @@
+jdbc.username
+jdbc.password
+jdbc.driverClassName = com.mysql.cj.jdbc.Driver
+jdbc.url

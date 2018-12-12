@@ -1,0 +1,17 @@
+package spring.anwesha.springdemo;
+
+public class DaoUtils {
+
+	
+	public static final String createOperation = "CREATE";
+	public static final String readOperation = "READ";
+	public static final String updateOperation = "UPDATE";
+	public static final String deleteOperation = "DELETE";
+	public static final String cleanupOperation = "TRUNCATE";
+	
+	public static void printOrganizations(List<organization> orgs, String operation)
+	{
+		
+	}
+	
+}

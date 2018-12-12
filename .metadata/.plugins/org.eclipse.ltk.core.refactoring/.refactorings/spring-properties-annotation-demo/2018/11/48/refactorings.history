@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;spring-properties-annotation-demo/src/main/java/com/anwesha/springdemo/ComponentAnnotationApp.java&apos; to &apos;PropertiesWithAnnotationApp.java&apos;" description="Rename resource &apos;ComponentAnnotationApp.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/anwesha/springdemo/ComponentAnnotationApp.java" name="PropertiesWithAnnotationApp.java" stamp="1543551056558" updateReferences="true"/>
+</session>

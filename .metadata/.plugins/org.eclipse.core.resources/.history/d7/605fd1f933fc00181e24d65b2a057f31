@@ -1,0 +1,37 @@
+package spring.anwesha.springdemo;
+
+import java.util.List;
+
+import spring.anwesha.springdemo.dao.OrganizationDao;
+import spring.anwesha.springdemo.domain.Organization;
+
+public class DaoUtils {
+
+	
+	public static final String createOperation = "CREATE";
+	public static final String readOperation = "READ";
+	public static final String updateOperation = "UPDATE";
+	public static final String deleteOperation = "DELETE";
+	public static final String cleanupOperation = "TRUNCATE";
+	
+	public static void printOrganizations(List<Organization> orgs, String operation)
+	{
+		System.out.println("\n*************************** Printing organizations after "+ operation + "operation ****************");
+		for(Organization org:orgs) {
+			System.out.println(org);
+		}
+	}
+
+	public static void printSuccessFailure(String operation, boolean param) {
+		if(param) {
+			System.out.println("\n operation "+operation+"********** success ************");
+		}
+		else
+			System.out.println("\n operation "+operation+"********** failure ************");
+	}
+	
+	public static void createSeedData(OrganizationDao dao) {
+		Organization org1 = new Organization("Amazon",1994,"65656",8765,"Work hard, have fun, make history");
+		
+	}
+}

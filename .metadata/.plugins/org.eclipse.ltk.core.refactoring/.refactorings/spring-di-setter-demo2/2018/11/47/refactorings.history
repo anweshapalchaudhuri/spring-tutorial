@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;spring-di-setter-demo2/src/main/java/com/anwesha/springdemo/SetterApp.java&apos; to &apos;DISetterApp.java&apos;" description="Rename resource &apos;SetterApp.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/anwesha/springdemo/SetterApp.java" name="DISetterApp.java" stamp="1542937424683" updateReferences="true"/>
+</session>

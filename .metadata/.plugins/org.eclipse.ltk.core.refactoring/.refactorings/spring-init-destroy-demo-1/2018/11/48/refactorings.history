@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;spring-init-destroy-demo-1/src/main/java/com/anwesha/springdemo/DISetterApp.java&apos; to &apos;InitDestroyApp.java&apos;" description="Rename resource &apos;DISetterApp.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/anwesha/springdemo/DISetterApp.java" name="InitDestroyApp.java" stamp="1543367028409" updateReferences="true"/>
+</session>

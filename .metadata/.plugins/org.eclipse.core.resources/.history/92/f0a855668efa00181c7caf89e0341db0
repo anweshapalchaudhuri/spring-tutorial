@@ -1,0 +1,21 @@
+package spring.anwesha.springdemo;
+
+import java.util.List;
+
+import spring.anwesha.springdemo.domain.Organization;
+
+public class DaoUtils {
+
+	
+	public static final String createOperation = "CREATE";
+	public static final String readOperation = "READ";
+	public static final String updateOperation = "UPDATE";
+	public static final String deleteOperation = "DELETE";
+	public static final String cleanupOperation = "TRUNCATE";
+	
+	public static void printOrganizations(List<Organization> orgs, String operation)
+	{
+		System.out.println("\n*************************** Printing organizations after "+ operation + "operation ****************");
+	}
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;spring-component-annotation-demo/src/main/java/com/anwesha/springdemo/AutowiredAnnotationApp.java&apos; to &apos;ComponentAnnotationApp.java&apos;" description="Rename resource &apos;AutowiredAnnotationApp.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/anwesha/springdemo/AutowiredAnnotationApp.java" name="ComponentAnnotationApp.java" stamp="1543518292214" updateReferences="true"/>
+</session>

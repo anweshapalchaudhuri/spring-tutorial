@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	default-init-method="postConstruct" default-destroy-method="preDestroy"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<bean id="myorg"
+		class="com.anwesha.springdemo.domain.Organization">
+		<constructor-arg value="${org.companyName}" name = "companyName" index="0"></constructor-arg>
+		<constructor-arg value="${org.yearOfIncorporation}" name="yearOfIncorporation" index="1"></constructor-arg>
+
+		<property value="${org.postalCode}" name="postalCode"></property>
+		<property value="${org.employeeCount}" name="employeeCount" ></property>
+		<property value="${org.slogan}" name="slogan">
+		</property>
+		<property name="businessService" ref="ecommerceService"></property>
+	</bean>
+	<bean id="cloudService" class="com.anwesha.springdemo.serviceimpl.CloudServiceImpl">
+	</bean>
+	<bean id="ecommerceService" class="com.anwesha.springdemo.serviceimpl.EcommerceServiceImpl">
+	</bean>
+	
+	<!--  <context:annotation-config></context:annotation-config>-->
+	<context:component-scan
+		base-package="com.anwesha.springdemo.domain">
+	</context:component-scan>
+	<context:property-placeholder location="organization.properties" />
+</beans>

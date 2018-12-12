@@ -1,0 +1,24 @@
+package spring.anwesha.springdemo;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import spring.anwesha.springdemo.dao.OrganizationDao;
+import spring.anwesha.springdemo.domain.Organization;
+
+public class JdbcTemplateClassicApp2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext ctx= new ClassPathXmlApplicationContext("beans-cp.xml");
+		//create the bean
+		OrganizationDao dao = (OrganizationDao) ctx.getBean("orgDao");
+		
+		DaoUtils.createSeedData(dao);
+		//close the application context
+		((ClassPathXmlApplicationContext)ctx).close();
+	}
+
+}
